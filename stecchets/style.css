@@ -1,0 +1,31 @@
+:root {
+    --playercolor: #4b7fff;
+    --altcolor: white;
+    --shadowcolor: #0003;
+}
+
+html {
+    overflow: hidden;
+    box-shadow: inset 0 0 10em 0.5em var(--shadowcolor);
+    transition: box-shadow 500ms cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+body {
+    background: var(--playercolor);
+    transition: background 1s;
+}
+
+.topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.game-icon {
+    font-size: 1.6em;
+    color: var(--altcolor);
+    margin: 15px;
+    cursor: pointer;
+    transition: color 1s;
+}
